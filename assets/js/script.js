@@ -22,7 +22,7 @@ class Pendu{
         <figure>
             <img src="./assets/img/debut.png" alt='début du pendu'>
             <figcaption>
-                Nombre de lettre à trouver : ${this.motAleatoire.length}<hr>Lettres trouvées : ${this.lettreAtrouvee}<hr>tentatives : ${this.tentatives}<hr>Erreurs : ${this.erreurs}/5
+                Nombre de lettre à trouver : ${this.motAleatoire.length}<hr>Lettres trouvées : ${this.lettreAtrouvee}<hr>tentatives : ${this.tentatives}<hr>Erreurs : ${this.erreurs}/6
             </figcaption>
         </figure>
         `;
@@ -102,7 +102,7 @@ class Pendu{
             document.body.querySelector('img').src = `./assets/img/erreur${this.erreurs}.png`;
             
         }
-        document.body.querySelector('figcaption').innerHTML=`Nombre de lettre à trouver : ${this.motAleatoire.length}<hr>Lettres trouvées : ${this.lettreAtrouvee}<hr>tentatives : ${this.tentatives}<hr>Erreurs : ${this.erreurs}/5`
+        document.body.querySelector('figcaption').innerHTML=`Nombre de lettre à trouver : ${this.motAleatoire.length}<hr>Lettres trouvées : ${this.lettreAtrouvee}<hr>tentatives : ${this.tentatives}<hr>Erreurs : ${this.erreurs}/6`
 
         this.checkGgorLoose();
     }
@@ -110,7 +110,7 @@ class Pendu{
     checkGgorLoose(){
         const paragraphMot = document.body.querySelector('section[id=lesLettres] >p');
 
-        if(this.erreurs === 5){
+        if(this.erreurs === 6){
             this.gameOver(paragraphMot);
             paragraphMot.classList.add('loser');
             paragraphMot.textContent = this.motAleatoire;

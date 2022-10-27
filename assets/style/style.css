@@ -49,6 +49,7 @@ figcaption{
     width: 30vw;
     text-align: center;
     justify-content: center;
+    font-family: 'Carter One', cursive;
 
 }
 
@@ -76,7 +77,8 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Carter One', cursive;
+    font-family: 'Fruktur', cursive;
+    font-size: 30px;
     
     
 }
@@ -110,6 +112,6 @@ ul{
 
 }
 
-.looser{
+.loser{
     color: red;
 }
